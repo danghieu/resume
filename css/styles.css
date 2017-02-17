@@ -704,7 +704,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 }
 .cv-container .banner {
   /*background-image: url(../img/diagonal-left.png), url(../img/black20.png), url(../img/dn2-compressor.png);*/
-  background-image: url(../img/diagonal-left.png), url(../img/black20.png), url(https://workstory.s3.amazonaws.com/assets/1395991/dn2-compressor.png);
+  background-image: url(../img/diagonal-left.png), url(../img/black20.png), url(https://workstory.s3.amazonaws.com/assets/1400453/dn2.jpg);
   background-color: transparent;
   background-size: 5px, 5px, cover;
   background-repeat: repeat, repeat, no-repeat;
