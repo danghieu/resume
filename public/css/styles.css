@@ -272,7 +272,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
   background-repeat: no-repeat;
 }
 .css-crop.bg-cover {
-  background-image:url(https://workstory.s3.amazonaws.com/assets/1395909/truongvu_cv.jpg);
+  background-image:url(../img/truongvu_cv.jpg);
   background-size: cover;
   /*-ms-behavior: url("/styles/backgroundsize.min.htc"); doesn't work on IE8-9...*/
   background-position: center;
@@ -703,8 +703,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
   /*-----  End of Timetable  ------*/
 }
 .cv-container .banner {
-  /*background-image: url(../img/diagonal-left.png), url(../img/black20.png), url(../img/dn2-compressor.png);*/
-  background-image: url(../img/diagonal-left.png), url(../img/black20.png), url(https://workstory.s3.amazonaws.com/assets/1400453/dn2.jpg);
+  background-image: url(../img/diagonal-left.png), url(../img/black20.png), url(../img/dn2.jpg);
   background-color: transparent;
   background-size: 5px, 5px, cover;
   background-repeat: repeat, repeat, no-repeat;

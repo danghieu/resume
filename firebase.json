@@ -1,0 +1,41 @@
+{
+  "hosting": {
+    "public": "public",
+	"headers": [
+		{
+	        "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+	        "headers" : [ {
+	          "key" : "Access-Control-Allow-Origin",
+	          "value" : "*"
+	        } ]
+        },
+        {
+	        "source" : "**/*.@(jpg|jpeg|gif|png)",
+	        "headers" : [ {
+	          "key" : "Cache-Control",
+	          "value" : "max-age=30672000"
+	        } ]
+        },
+        {
+	        "source" : "**/*.@(js|css)",
+	        "headers" : [ {
+	          "key" : "Cache-Control",
+	          "value" : "max-age=604800"
+	        } ]
+		},
+        {
+	        "source" : "index.html",
+	        "headers" : [ {
+	          "key" : "Cache-Control",
+	          "value" : "max-age=604800"
+	        } ]
+		}
+	],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
