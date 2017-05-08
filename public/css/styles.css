@@ -272,10 +272,15 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
   background-repeat: no-repeat;
 }
 .css-crop.bg-cover {
-  background-image:url(../img/truongvu_cv.jpg);
-  background-size: cover;
+/*  background-image:url(../img/hieu_cv.jpg);
+*/  background-size: cover;
   /*-ms-behavior: url("/styles/backgroundsize.min.htc"); doesn't work on IE8-9...*/
   background-position: center;
+}
+.bg-cover:hover img {
+  -moz-transform: scale(2);
+  -webkit-transform: scale(25);
+  transform: scale(2);
 }
 .css-crop.bg-contain {
   background-size: contain;
@@ -900,8 +905,8 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 }
 .cv-container article .article-body {
   padding-bottom: 3em;
-  min-height: 7em;
-}
+/*  min-height: 7em;
+*/}
 .cv-container .competency .competency-bar {
   margin: 0.5em 0px 0.75em;
   width: 100%;
@@ -1101,4 +1106,17 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 }
 @page :first {
   margin-top: 0cm;
+}
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    display: none;
+    text-indent: -9999px;
+    background: url('../img/top.png') no-repeat;
+    background-size: 40px 40px;
+
 }
