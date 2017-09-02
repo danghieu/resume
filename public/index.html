@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="shortcut icon" href=/favicon.ico>
 <title>Nguyen Dang Hieu - Web Developer</title>
 <meta name="description" content="HIeu Nguyen - Web Developer">
 <meta name="author" content="HIeu Nguyen">
@@ -23,7 +22,7 @@
 <![endif]-->
 </head>
 <body class="cv-viewer">
-<div>
+<div id="github_iframe">
     <div class="cv-container animated fadeIn ">
       <div class="cv-content single-column">
         <div class="banner">
@@ -419,6 +418,18 @@
       &copy;Copyright by Hieu Nguyen Dang
     </p>
   </footer>
+<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="http://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+
+<script type="text/javascript">
+    function async_load() {
+        //async load github
+       
+        document.getElementById("github_iframe").setAttribute("frameborder", "0", 0);
+    }
+    if (window.addEventListener) {window.addEventListener("load", async_load, false);}
+    else if (window.attachEvent) {window.attachEvent("onload", async_load);}
+    else {window.onload = async_load;}
+</script>
 <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:300,400|PT_Sans:400,700&subset=latin,cyrillic" lazyload/> -->
 <script async src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>

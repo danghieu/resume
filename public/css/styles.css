@@ -693,7 +693,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
   opacity: 0 !important;
 }
 .cv-container {
-  background-color: #fcfcfc;
+  background-color: transparent;
   margin: 0px auto;
   width: 100%;
   max-width: initial;
