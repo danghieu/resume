@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'firebase-tools' ]
+2 info using npm@2.15.1
+3 info using node@v0.10.48
+4 verbose node symlink /usr/bin/node
+5 verbose install initial load of /usr/lib/package.json
+6 verbose readDependencies loading dependencies from /usr/lib/package.json
+7 silly cache add args [ 'firebase-tools', null ]
+8 verbose cache add spec firebase-tools
+9 silly cache add parsed spec { raw: 'firebase-tools',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'firebase-tools',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: 'latest',
+9 silly cache add   type: 'tag' }
+10 silly addNamed firebase-tools@latest
+11 verbose addNamed "latest" is being treated as a dist-tag for firebase-tools
+12 info addNameTag [ 'firebase-tools', 'latest' ]
+13 silly mapToRegistry name firebase-tools
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry data { raw: 'firebase-tools',
+16 silly mapToRegistry   scope: null,
+16 silly mapToRegistry   name: 'firebase-tools',
+16 silly mapToRegistry   rawSpec: '',
+16 silly mapToRegistry   spec: 'latest',
+16 silly mapToRegistry   type: 'tag' }
+17 silly mapToRegistry uri https://registry.npmjs.org/firebase-tools
+18 verbose addNameTag registry:https://registry.npmjs.org/firebase-tools not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/firebase-tools
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 13:37:52
+22 verbose request id 373ed305f12fdea2
+23 verbose etag W/"49ef35499cb3739f7727f67b1cc01121"
+24 verbose lastModified Fri, 22 Jun 2018 18:08:49 GMT
+25 http request GET https://registry.npmjs.org/firebase-tools
+26 http 304 https://registry.npmjs.org/firebase-tools
+27 verbose headers { date: 'Mon, 25 Jun 2018 13:37:51 GMT',
+27 verbose headers   connection: 'keep-alive',
+27 verbose headers   'set-cookie': [ '__cfduid=dcd8809b67932541a056e976d8ea9c4f81529933871; expires=Tue, 25-Jun-19 13:37:51 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+27 verbose headers   'cache-control': 'max-age=300',
+27 verbose headers   'cf-cache-status': 'HIT',
+27 verbose headers   'cf-ray': '4307d4cb29d7321c-SIN',
+27 verbose headers   etag: '"49ef35499cb3739f7727f67b1cc01121"',
+27 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+27 verbose headers   'last-modified': 'Fri, 22 Jun 2018 18:08:49 GMT',
+27 verbose headers   vary: 'accept-encoding, accept',
+27 verbose headers   server: 'cloudflare' }
+28 silly get cb [ 304,
+28 silly get   { date: 'Mon, 25 Jun 2018 13:37:51 GMT',
+28 silly get     connection: 'keep-alive',
+28 silly get     'set-cookie': [ '__cfduid=dcd8809b67932541a056e976d8ea9c4f81529933871; expires=Tue, 25-Jun-19 13:37:51 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+28 silly get     'cache-control': 'max-age=300',
+28 silly get     'cf-cache-status': 'HIT',
+28 silly get     'cf-ray': '4307d4cb29d7321c-SIN',
+28 silly get     etag: '"49ef35499cb3739f7727f67b1cc01121"',
+28 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+28 silly get     'last-modified': 'Fri, 22 Jun 2018 18:08:49 GMT',
+28 silly get     vary: 'accept-encoding, accept',
+28 silly get     server: 'cloudflare' } ]
+29 verbose etag https://registry.npmjs.org/firebase-tools from cache
+30 verbose get saving firebase-tools to /root/.npm/registry.npmjs.org/firebase-tools/.cache.json
+31 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+32 silly addNameTag next cb for firebase-tools with tag latest
+33 verbose stack Error: No compatible version found: firebase-tools@'latest'
+33 verbose stack Valid install targets:
+33 verbose stack ["0.0.1","0.0.2","0.0.3","0.0.4","0.0.5","0.0.6","0.1.0","0.1.1","0.1.2","0.1.3","0.1.4","0.1.5","0.1.6","0.2.0","0.3.0","0.4.0","0.5.0","1.0.0","1.0.1","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.1.0","1.1.1","1.1.2","1.1.3","1.1.4","1.1.5","1.1.6","1.2.0","2.0.0","2.0.1","2.0.2","2.1.0","2.1.1","2.2.0","2.2.1","3.0.0","3.0.1","3.0.2","3.0.3","3.0.4","3.0.5","3.0.6","3.0.7","3.0.8","3.1.0","3.2.0","3.2.1","3.2.2","3.2.3","3.3.0","3.4.0","3.5.0","3.6.0","3.6.1","3.7.0","3.8.0","3.9.0","3.9.1","3.9.2","3.10.0"]
+33 verbose stack
+33 verbose stack     at installTargetsError (/usr/lib/node_modules/npm/lib/cache/add-named.js:284:12)
+33 verbose stack     at next (/usr/lib/node_modules/npm/lib/cache/add-named.js:94:10)
+33 verbose stack     at RES (/usr/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+33 verbose stack     at f (/usr/lib/node_modules/npm/node_modules/once/once.js:17:25)
+33 verbose stack     at fixName (/usr/lib/node_modules/npm/lib/cache/add-named.js:29:5)
+33 verbose stack     at saved (/usr/lib/node_modules/npm/lib/cache/caching-client.js:173:7)
+33 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+33 verbose stack     at Object.oncomplete (fs.js:108:15)
+34 verbose cwd /app
+35 error Linux 4.9.87-linuxkit-aufs
+36 error argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "firebase-tools"
+37 error node v0.10.48
+38 error npm  v2.15.1
+39 error code ETARGET
+40 error notarget No compatible version found: firebase-tools@'latest'
+40 error notarget Valid install targets:
+40 error notarget ["0.0.1","0.0.2","0.0.3","0.0.4","0.0.5","0.0.6","0.1.0","0.1.1","0.1.2","0.1.3","0.1.4","0.1.5","0.1.6","0.2.0","0.3.0","0.4.0","0.5.0","1.0.0","1.0.1","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.1.0","1.1.1","1.1.2","1.1.3","1.1.4","1.1.5","1.1.6","1.2.0","2.0.0","2.0.1","2.0.2","2.1.0","2.1.1","2.2.0","2.2.1","3.0.0","3.0.1","3.0.2","3.0.3","3.0.4","3.0.5","3.0.6","3.0.7","3.0.8","3.1.0","3.2.0","3.2.1","3.2.2","3.2.3","3.3.0","3.4.0","3.5.0","3.6.0","3.6.1","3.7.0","3.8.0","3.9.0","3.9.1","3.9.2","3.10.0"]
+40 error notarget
+40 error notarget This is most likely not a problem with npm itself.
+40 error notarget In most cases you or one of your dependencies are requesting
+40 error notarget a package version that doesn't exist.
+41 verbose exit [ 1, true ]
